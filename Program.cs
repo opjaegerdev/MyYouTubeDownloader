@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using MyYoutubeDownloader;
@@ -72,12 +73,13 @@ class Program
 
             var youtube = new YoutubeClient();
             var video = await youtube.Videos.GetAsync(videoId);
-            var videoTitle = video.Title;
+            var videoTitleClean = FileNameHelper.SanitizeYouTubeTitle(video.Title);
+            var videoTitleUnique = FileNameHelper.EnsureUniqueFileName(downloadFolder, videoTitleClean);
 
-            Console.WriteLine($"Downloading: {videoTitle}");
+            Console.WriteLine($"Downloading: {videoTitleUnique}");
 
             // Set the output file path
-            var outputPath = Path.Combine(downloadFolder, $"{videoTitle}.mp4");
+            var outputPath = Path.Combine(downloadFolder, $"{videoTitleUnique}.mp4");
 
             try
             {
