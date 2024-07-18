@@ -1,7 +1,7 @@
-Lightweight & Portable YouTube video downloader
+Lightweight & Portable YouTube video downloader https://github.com/opjaegerdev/MyYoutubeDownloader
 
-Free and Open-Source
+Royalty Free and Open Source
 
-Created by @opjaegerdev
+Created by @opjaegerdev https://github.com/opjaegerdev
 
 I didnt tread any new ground here I just wanted to do it myself.
