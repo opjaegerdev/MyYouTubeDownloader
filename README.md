@@ -1,6 +1,6 @@
 Lightweight & Portable YouTube video downloader https://github.com/opjaegerdev/MyYoutubeDownloader
 
-Requires FFMpeg in this app's directory (next to the .exe) or in your systems $PATH
+Requires FFMpeg in this app's directory (next to the .exe) or in your systems $PATH https://www.ffmpeg.org/
 
 I didnt tread any new ground here I just wanted to do it myself.
 
