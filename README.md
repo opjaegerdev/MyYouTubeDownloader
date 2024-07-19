@@ -6,7 +6,7 @@ I didnt tread any new ground here I just wanted to do it myself. Right now there
 It will download at the highest available quality.
 
 
-Created by @opjaegerdev https://github.com/opjaegerdev
+Created by [@opjaegerdev](https://github.com/opjaegerdev)
 Royalty Free and Open Source
 
 
